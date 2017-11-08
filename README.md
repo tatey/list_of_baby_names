@@ -1,8 +1,6 @@
 # BabyNames
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/baby_names`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Baby name data.
 
 ## Installation
 
@@ -22,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Get the first name from the Hadley data set:
+
+    hadley = BabyNames::Hadley.new
+    hadley.names.size # => 
+    hadley.names.last.name # => "Elianna"
+    hadley.names.last.gender # => :female
+
+## Data Sets
+
+* [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
 
 ## Development
 
@@ -32,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/baby_names.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tatey/baby_names.
 
 ## License
 
