@@ -27,9 +27,14 @@ Get the first name from the Hadley data set:
     hadley.names.last.name # => "Elianna"
     hadley.names.last.gender # => :female
 
+Get the list of data sets:
+
+    BabyNames.data_sets # => [BabyNames::Hadley, BabyNames::SouthAustralia]
+
 ## Data Sets
 
 * [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
+* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
 
 ## Development
 
