@@ -4,6 +4,10 @@
 # https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be
 # Top Baby Names Male - 2016
 # https://data.sa.gov.au/data/dataset/popular-baby-names/resource/138f3cf7-edd6-4af2-85c6-2639dbbf04ae
+
+require "csv"
+require "baby_names/name"
+
 module BabyNames
   class SouthAustralia
     def names
