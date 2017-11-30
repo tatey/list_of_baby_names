@@ -22,14 +22,14 @@ Or install it yourself as:
 
 Get the first name from the Hadley data set:
 
-    hadley = BabyNames::Hadley.new
-    hadley.names.size # => 
-    hadley.names.last.name # => "Elianna"
+    hadley = BabyNames.hadley
+    hadley.names.size # => 258000
+    hadley.names.last.name # => "Sloane"
     hadley.names.last.gender # => :female
 
 Get the list of data sets:
 
-    BabyNames.data_sets # => [BabyNames::Hadley, BabyNames::SouthAustralia]
+    BabyNames.data_sets # => [:hadley, :south_australia]
 
 ## Data Sets
 
