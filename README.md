@@ -23,9 +23,13 @@ Or install it yourself as:
 Get the first name from the Hadley data set:
 
     hadley = BabyNames.hadley
-    hadley.names.size # => 258000
-    hadley.names.last.name # => "Sloane"
-    hadley.names.last.gender # => :female
+    hadley.size # => 258000
+
+    last = hadley.last
+    last.name # => "Sloane"
+    last.gender # => :female
+    last.year # => 2008
+    last.position # => 1000
 
 Get the list of data sets:
 
