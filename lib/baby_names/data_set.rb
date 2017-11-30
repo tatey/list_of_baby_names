@@ -10,6 +10,8 @@ module BabyNames
         Name.new(
           name: row["name"],
           gender: GENDERS[row["gender"]],
+          year: row["year"].to_i,
+          position: row["position"].to_i,
         )
       end
     end

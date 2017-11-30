@@ -16,12 +16,16 @@ RSpec.describe BabyNames do
       name = @data_set.first
       expect(name.name).to eq("John")
       expect(name.gender).to eq(:male)
+      expect(name.year).to eq(1880)
+      expect(name.position).to eq(1)
     end
 
     it "has Elianna as the last name" do
       name = @data_set.last
       expect(name.name).to eq("Sloane")
       expect(name.gender).to eq(:female)
+      expect(name.year).to eq(2008)
+      expect(name.position).to eq(1000)
     end
 
     it "has 258,000 names" do
@@ -38,12 +42,16 @@ RSpec.describe BabyNames do
       name = @data_set.first
       expect(name.name).to eq("Oliver")
       expect(name.gender).to eq(:male)
+      expect(name.year).to eq(2016)
+      expect(name.position).to eq(1)
     end
 
     it "has Zuriel as the last name" do
       name = @data_set.last
       expect(name.name).to eq("Zymeliah")
       expect(name.gender).to eq(:female)
+      expect(name.year).to eq(2016)
+      expect(name.position).to eq(839)
     end
 
     it "has 5,254 names" do
