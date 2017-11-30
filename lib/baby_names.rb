@@ -1,15 +1,16 @@
 require "baby_names/data_set"
-require "baby_names/south_australia"
 require "baby_names/version"
 
 module BabyNames
   def self.data_sets
-    [SouthAustralia]
+    [:hadley, :south_australia]
   end
-end
 
-module BabyNames
   def self.hadley
     DataSet.load_file(File.expand_path("../../db/hadley.csv", __FILE__))
+  end
+
+  def self.south_australia
+    DataSet.load_file(File.expand_path("../../db/south_australia.csv", __FILE__))
   end
 end
