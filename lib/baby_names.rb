@@ -3,7 +3,7 @@ require "baby_names/version"
 
 module BabyNames
   def self.data_sets
-    [:hadley, :south_australia]
+    [:hadley, :south_australia, :queensland]
   end
 
   # US Data Set
@@ -27,5 +27,14 @@ module BabyNames
   # @return [Array<Name>]
   def self.south_australia
     DataSet.load_file(File.expand_path("../../db/south_australia.csv", __FILE__))
+  end
+
+  # Queensland Data Set
+  #
+  # https://data.qld.gov.au/dataset/top-100-baby-names
+  #
+  # @return [Array<Name>]
+  def self.queensland
+    DataSet.load_file(File.expand_path("../../db/queensland.csv", __FILE__))
   end
 end

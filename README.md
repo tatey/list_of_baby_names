@@ -33,12 +33,14 @@ Get the first name from the Hadley data set:
 
 Get the list of data sets:
 
-    BabyNames.data_sets # => [:hadley, :south_australia]
+    BabyNames.data_sets # => [:hadley, :south_australia, :queensland]
 
 ## Data Sets
 
 * [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
 * [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
+* [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names)
+
 
 ## Development
 
