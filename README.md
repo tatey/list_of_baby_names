@@ -41,6 +41,9 @@ Get the list of data sets:
 * [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
 * [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names)
 
+## Scripts
+
+Scripts for transforming data sets into the common format are in `script`. These scripts are *super hacky* and mostly for my convenience.
 
 ## Development
 
