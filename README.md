@@ -1,6 +1,12 @@
-# BabyNames
+# Baby Names
 
-Baby name data.
+A list of baby names in Ruby. Based on:
+
+* [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
+* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
+* [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names)
+
+This library was extracted from [Namestork](https://namestork.app). Namestork brings 9 names to you and your partner's inbox once a day at a time of your choosing. If you're looking to find the perfect name for your baby consider trying it.
 
 ## Installation
 
@@ -35,11 +41,6 @@ Get the list of data sets:
 
     BabyNames.data_sets # => [:hadley, :south_australia, :queensland]
 
-## Data Sets
-
-* [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
-* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
-* [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names)
 
 ## Scripts
 
