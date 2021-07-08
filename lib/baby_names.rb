@@ -13,15 +13,7 @@ module BabyNames
   #
   # @return [Array<Name>]
   def self.behindthename
-    path = File.expand_path("../../db/behindthename.txt", __FILE__)
-    CSV.foreach(path, headers: true, col_sep: "	", skip_lines: /^#/).map do |row|
-      Name.new(
-        name: row["name"],
-        gender: nil,
-        year: nil,
-        position: nil,
-      )
-    end
+    DataSet.load_file(File.expand_path("../../db/behindthename.txt", __FILE__), col_sep: "	", skip_lines: /^#/)
   end
 
   # US Data Set

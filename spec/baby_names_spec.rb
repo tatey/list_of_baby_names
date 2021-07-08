@@ -15,11 +15,25 @@ RSpec.describe BabyNames do
     it "has Aabraham as the first name" do
       name = @data_set.first
       expect(name.name).to eq("Aabraham")
+      expect(name.gender).to eq(:male)
+      expect(name.year).to eq(-1)
+      expect(name.position).to eq(-1)
     end
 
     it "has Zyta as the last name" do
       name = @data_set.last
       expect(name.name).to eq("Zyta")
+      expect(name.gender).to eq(:female)
+      expect(name.year).to eq(-1)
+      expect(name.position).to eq(-1)
+    end
+
+    it "has unisex names" do
+      aaren = @data_set.find { |name| name.name == "Aaren" }
+      expect(aaren.gender).to eq(:unisex)
+
+      addison = @data_set.find { |name| name.name == "Addison" }
+      expect(addison.gender).to eq(:unisex)
     end
 
     it "has 23,355 names" do
