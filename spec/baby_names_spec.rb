@@ -3,7 +3,27 @@ require "spec_helper"
 RSpec.describe BabyNames do
   describe ".data_sets" do
     it "is an array of symbols" do
-      expect(BabyNames.data_sets).to contain_exactly(:hadley, :south_australia, :queensland)
+      expect(BabyNames.data_sets).to contain_exactly(:behindthename, :hadley, :south_australia, :queensland)
+    end
+  end
+
+  describe ".behindthename" do
+    before(:all) do
+      @data_set = BabyNames.behindthename
+    end
+
+    it "has Aabraham as the first name" do
+      name = @data_set.first
+      expect(name.name).to eq("Aabraham")
+    end
+
+    it "has Zyta as the last name" do
+      name = @data_set.last
+      expect(name.name).to eq("Zyta")
+    end
+
+    it "has 23,355 names" do
+      expect(@data_set.size).to eq(23_355)
     end
   end
 

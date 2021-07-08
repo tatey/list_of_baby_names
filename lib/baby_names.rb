@@ -3,7 +3,25 @@ require "baby_names/version"
 
 module BabyNames
   def self.data_sets
-    [:hadley, :south_australia, :queensland]
+    [:behindthename, :hadley, :south_australia, :queensland]
+  end
+
+  # Behind the Name
+  #
+  # List of given names, genders, and synonyms (related names)
+  # https://www.behindthename.com/api/
+  #
+  # @return [Array<Name>]
+  def self.behindthename
+    path = File.expand_path("../../db/behindthename.txt", __FILE__)
+    CSV.foreach(path, headers: true, col_sep: "	", skip_lines: /^#/).map do |row|
+      Name.new(
+        name: row["name"],
+        gender: nil,
+        year: nil,
+        position: nil,
+      )
+    end
   end
 
   # US Data Set
