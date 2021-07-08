@@ -4,8 +4,8 @@ A list of baby names in Ruby derived from the following data sets:
 
 * [Behind the Name](https://www.behindthename.com/api/) (Creative Commons Attribution-ShareAlike 4.0 license)
 * [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
-* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True)
-* [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names)
+* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True) (Creative Commons Attribution 4.0 International (CC BY 4.0)
+* [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names) (Creative Commons Attribution 3.0)
 
 This library was extracted from [Namestork](https://namestork.app). Namestork brings 9 names to you and your partner's inbox once a day at a time of your choosing. If you're looking to find the perfect name for your baby consider trying it.
 
@@ -37,6 +37,16 @@ Get the first name from the Hadley data set:
     last.gender # => :female
     last.year # => 2008
     last.position # => 1000
+
+Get "Addison" from the Behind the Name data set (_Note_: ranking is unsupported in this data set so `-1` is returned for `#year` and `#position`):
+
+    behindthename = BabyNames.behindthename
+    behindthename.size # => 23355
+
+    addison = behindthename.find { |name| name.name == "Addison" }
+    addison.gender # => :unisex
+    addison.year # => -1
+    addison.position # => -1
 
 Get the list of data sets:
 
