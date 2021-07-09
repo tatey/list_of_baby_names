@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tate Johnson"]
   spec.email         = ["tate@tatey.com"]
 
-  spec.summary       = %q{Baby name data}
-  spec.description   = %q{Baby name data}
+  spec.summary       = %q{A list of baby names given to tiny humans}
+  spec.description   = %q{A list of baby names given to tiny humans}
   spec.homepage      = "https://github.com/tatey/list_of_baby_names"
   spec.license       = "MIT"
 
