@@ -3,11 +3,11 @@
 A list of baby names given to tiny humans. Based on data from:
 
 * [Behind the Name](https://www.behindthename.com/api/) (Creative Commons Attribution-ShareAlike 4.0 license)
-* [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names)
-* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True) (Creative Commons Attribution 4.0 International (CC BY 4.0)
+* [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names) (Public Domain)
+* [South Australia (2016)](https://data.sa.gov.au/data/dataset/popular-baby-names/resource/5e58668a-8150-4c0a-b17e-d55636a318be?inner_span=True) (Creative Commons Attribution 4.0 International)
 * [Queensland (2006-2016)](https://data.qld.gov.au/dataset/top-100-baby-names) (Creative Commons Attribution 3.0)
 
-This library was extracted from [Namestork](https://namestork.app). Namestork brings 9 names to you and your partner's inbox once a day at a time of your choosing. If you're looking to find the perfect name for your baby consider trying it.
+This gem was extracted from [Namestork](https://namestork.app). Namestork brings 9 names to you and your partner's inbox once a day at a time of your choosing. If you're looking to find the perfect name for your baby consider trying it.
 
 ## Installation
 

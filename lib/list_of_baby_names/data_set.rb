@@ -6,7 +6,7 @@ module ListOfBabyNames
     GENDERS = {"m" => :male, "f" => :female, "mf" => :unisex, "fm" => :unisex}
 
     def self.load_file(path, **options)
-      CSV.foreach(path, headers: true, **options).map do |row|
+      CSV.foreach(path, headers: true, skip_lines: /^#/, **options).map do |row|
         Name.new(
           name: row["name"],
           gender: GENDERS[row["gender"]],

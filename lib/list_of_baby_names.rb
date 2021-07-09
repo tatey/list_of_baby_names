@@ -13,7 +13,7 @@ module ListOfBabyNames
   #
   # @return [Array<Name>]
   def self.behindthename
-    DataSet.load_file(File.expand_path("../../db/behindthename.txt", __FILE__), col_sep: "	", skip_lines: /^#/)
+    DataSet.load_file(File.expand_path("../../db/behindthename.txt", __FILE__), col_sep: "	")
   end
 
   # US Data Set
