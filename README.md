@@ -1,6 +1,6 @@
 # List Of Baby Names
 
-A list of baby names given to tiny humans. Based on data from:
+A list of baby names given to tiny humans in Ruby. Based on data from:
 
 * [Behind the Name](https://www.behindthename.com/api/) (Creative Commons Attribution-ShareAlike 4.0 license)
 * [Hadley (Distribution of US baby names, 1880-2008)](https://github.com/hadley/data-baby-names) (Public Domain)
