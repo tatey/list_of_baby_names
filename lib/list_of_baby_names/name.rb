@@ -1,4 +1,4 @@
-module BabyNames
+module ListOfBabyNames
   class Name
     attr_reader :name, :gender, :year, :position
 

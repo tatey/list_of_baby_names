@@ -1,7 +1,7 @@
 require "csv"
-require "baby_names/name"
+require "list_of_baby_names/name"
 
-module BabyNames
+module ListOfBabyNames
   class DataSet
     GENDERS = {"m" => :male, "f" => :female, "mf" => :unisex, "fm" => :unisex}
 

@@ -1,4 +1,4 @@
-# Baby Names
+# List of Baby Names
 
 A list of baby names in Ruby derived from the following data sets:
 
@@ -14,7 +14,7 @@ This library was extracted from [Namestork](https://namestork.app). Namestork br
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'baby_names'
+gem 'list_of_baby_names'
 ```
 
 And then execute:
@@ -23,13 +23,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install baby_names
+    $ gem install list_of_baby_names
 
 ## Usage
 
 Get the first name from the Hadley data set:
 
-    hadley = BabyNames.hadley
+    hadley = ListOfBabyNames.hadley
     hadley.size # => 258000
 
     last = hadley.last
@@ -40,7 +40,7 @@ Get the first name from the Hadley data set:
 
 Get "Addison" from the Behind the Name data set (_Note_: ranking is unsupported in this data set so `-1` is returned for `#year` and `#position`):
 
-    behindthename = BabyNames.behindthename
+    behindthename = ListOfBabyNames.behindthename
     behindthename.size # => 23355
 
     addison = behindthename.find { |name| name.name == "Addison" }
@@ -50,7 +50,7 @@ Get "Addison" from the Behind the Name data set (_Note_: ranking is unsupported 
 
 Get the list of data sets:
 
-    BabyNames.data_sets # => [:behindthename, :hadley, :south_australia, :queensland]
+    ListOfBabyNames.data_sets # => [:behindthename, :hadley, :south_australia, :queensland]
 
 ## Scripts
 
@@ -64,7 +64,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tatey/baby_names.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tatey/list_of_baby_names.
 
 ## License
 

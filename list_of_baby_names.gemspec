@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "baby_names/version"
+require "list_of_baby_names/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "baby_names"
-  spec.version       = BabyNames::VERSION
+  spec.name          = "list_of_baby_names"
+  spec.version       = ListOfBabyNames::VERSION
   spec.authors       = ["Tate Johnson"]
   spec.email         = ["tate@tatey.com"]
 
   spec.summary       = %q{Baby name data}
   spec.description   = %q{Baby name data}
-  spec.homepage      = "https://github.com/tatey/baby_names"
+  spec.homepage      = "https://github.com/tatey/list_of_baby_names"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

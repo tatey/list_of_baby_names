@@ -1,7 +1,7 @@
-require "baby_names/data_set"
-require "baby_names/version"
+require "list_of_baby_names/data_set"
+require "list_of_baby_names/version"
 
-module BabyNames
+module ListOfBabyNames
   def self.data_sets
     [:behindthename, :hadley, :south_australia, :queensland]
   end

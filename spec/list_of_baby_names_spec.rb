@@ -1,15 +1,15 @@
 require "spec_helper"
 
-RSpec.describe BabyNames do
+RSpec.describe ListOfBabyNames do
   describe ".data_sets" do
     it "is an array of symbols" do
-      expect(BabyNames.data_sets).to contain_exactly(:behindthename, :hadley, :south_australia, :queensland)
+      expect(ListOfBabyNames.data_sets).to contain_exactly(:behindthename, :hadley, :south_australia, :queensland)
     end
   end
 
   describe ".behindthename" do
     before(:all) do
-      @data_set = BabyNames.behindthename
+      @data_set = ListOfBabyNames.behindthename
     end
 
     it "has Aabraham as the first name" do
@@ -43,7 +43,7 @@ RSpec.describe BabyNames do
 
   describe ".hadley" do
     before(:all) do
-      @data_set = BabyNames.hadley
+      @data_set = ListOfBabyNames.hadley
     end
 
     it "has John as the first name" do
@@ -69,7 +69,7 @@ RSpec.describe BabyNames do
 
   describe ".south_australia" do
     before(:all) do
-      @data_set = BabyNames.south_australia
+      @data_set = ListOfBabyNames.south_australia
     end
 
     it "has Charlotte as the first name" do
@@ -95,7 +95,7 @@ RSpec.describe BabyNames do
 
   describe ".queensland" do
     before(:all) do
-      @data_set = BabyNames.queensland
+      @data_set = ListOfBabyNames.queensland
     end
 
     it "has Charlotte as the first name" do

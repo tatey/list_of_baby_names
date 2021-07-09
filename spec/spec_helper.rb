@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "baby_names"
+require "list_of_baby_names"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
